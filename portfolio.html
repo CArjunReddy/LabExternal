@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - My Web App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .portfolio-item {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .portfolio-item h3 {
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+        .portfolio-item p {
+            margin-bottom: 0.5rem;
+        }
+        .portfolio-item .tech {
+            color: #666;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Our Portfolio</h1>
+        <p>Check out some of our recent projects and accomplishments.</p>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>E-Commerce Platform</h3>
+                <p>A full-featured online store with product catalog, shopping cart, and secure checkout.</p>
+                <p class="tech">Tech: HTML, CSS, JavaScript, Node.js, MongoDB</p>
+            </div>
+            
+            <div class="portfolio-item">
+                <h3>Corporate Website</h3>
+                <p>Professional website for a Fortune 500 company with responsive design and CMS integration.</p>
+                <p class="tech">Tech: React, Vue.js, WordPress</p>
+            </div>
+            
+            <div class="portfolio-item">
+                <h3>Mobile App</h3>
+                <p>Native iOS and Android app for fitness tracking with real-time data synchronization.</p>
+                <p class="tech">Tech: Swift, Kotlin, Firebase</p>
+            </div>
+            
+            <div class="portfolio-item">
+                <h3>Social Media Platform</h3>
+                <p>Social networking application with user profiles, messaging, and content sharing features.</p>
+                <p class="tech">Tech: MERN Stack, Socket.io</p>
+            </div>
+            
+            <div class="portfolio-item">
+                <h3>Analytics Dashboard</h3>
+                <p>Real-time analytics dashboard with data visualization and reporting capabilities.</p>
+                <p class="tech">Tech: React, D3.js, Python, PostgreSQL</p>
+            </div>
+            
+            <div class="portfolio-item">
+                <h3>Content Management System</h3>
+                <p>Custom CMS for managing and publishing digital content across multiple platforms.</p>
+                <p class="tech">Tech: Django, PostgreSQL, Vue.js</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 My Web App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
